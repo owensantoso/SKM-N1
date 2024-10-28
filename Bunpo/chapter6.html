@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>様子 (State/Condition)</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure this path is correct -->
+</head>
+<body>
+    <!-- Persistent Navigation Bar -->
+    <div class="navbar">
+        <h1 id="chapterTitle" onclick="openGrammar(event, 'Overview')">第６課 様子</h1>
+        <div class="tab">
+            <!-- Grammar Point Tabs -->
+            <button class="tablinks" onclick="openGrammar(event, 'Grammar1')">
+                <span class="grammar-structure">～んばかりだ</span><br>
+                <span class="subtext">"As if about to...; Almost..."<br>
+                Indicates a state that seems like something is about to happen.<br>
+                彼は力強くうなずいた。任せると言わんばかりだった。<br>
+                "He nodded vigorously, as if saying he would entrust it."</span>
+            </button>
+            <button class="tablinks" onclick="openGrammar(event, 'Grammar2')">
+                <span class="grammar-structure">～とばかり（に）</span><br>
+                <span class="subtext">"As if to say...; Without actually saying..."<br>
+                Indicates an attitude or action that suggests something without explicitly stating it.<br>
+                ケーキを買って帰ったら、「待ってました」とばかり、みんながテーブルに集まった。<br>
+                "After buying and returning with the cake, everyone gathered around the table as if saying 'We were waiting for this.'</span>
+            </button>
+            <button class="tablinks" onclick="openGrammar(event, 'Grammar3')">
+                <span class="grammar-structure">～ともなく・～ともなしに</span><br>
+                <span class="subtext">"Without consciously deciding to...; Unintentionally..."<br>
+                Indicates performing an action without a clear intention or purpose.<br>
+                テレビを見るともなく見ていたら、友達がテレビに出ていてびっくりした。<br>
+                "I was watching TV without really intending to, and was surprised to see my friend on the show."</span>
+            </button>
+            <button class="tablinks" onclick="openGrammar(event, 'Grammar4')">
+                <span class="grammar-structure">～ながらに（して）</span><br>
+                <span class="subtext">"While...; Even though..."<br>
+                Indicates maintaining a certain state or condition while something else is happening.<br>
+                この子は生まれながらに優れた音感を持っていた。<br>
+                "This child was born with an excellent sense of pitch."</span>
+            </button>
+            <button class="tablinks" onclick="openGrammar(event, 'Grammar5')">
+                <span class="grammar-structure">～きらいがある</span><br>
+                <span class="subtext">"Has a tendency to...; Prone to..."<br>
+                Indicates a negative tendency or habit.<br>
+                彼はどうも物事を悲観的に考えるきらいがある。<br>
+                "He seems to have a tendency to think pessimistically about things."</span>
+            </button>
+            <!-- Dropdown for Other Chapters -->
+            <div class="dropdown">
+                <button class="dropbtn">Chapters</button>
+                <div class="dropdown-content">
+                    <a href="chapter1.html">第１課</a>
+                    <a href="chapter2.html">第２課</a>
+                    <a href="chapter3.html">第３課</a>
+                    <a href="chapter4.html">第４課</a>
+                    <a href="chapter5.html">第５課</a>
+                    <a href="chapter6.html" class="current">第６課</a>
+                    <a href="chapter7.html">第７課</a>
+                    <a href="chapter8.html">第８課</a>
+                    <a href="chapter9.html">第９課</a>
+                    <a href="chapter10.html">第１０課</a>
+                    <a href="chapter11.html">第１１課</a>
+                    <a href="chapter12.html">第１２課</a>
+                    <a href="chapter13.html">第１３課</a>
+                    <a href="chapter14.html">第１４課</a>
+                    <a href="chapter15.html">第１５課</a>
+                    <a href="chapter16.html">第１６課</a>
+                    <a href="chapter17.html">第１７課</a>
+                    <a href="chapter18.html">第１８課</a>
+                    <a href="chapter19.html">第１９課</a>
+                    <a href="chapter20.html">第２０課</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content Area -->
+    <div class="content">
+        <!-- Overview Section -->
+        <div id="Overview" class="tabcontent">
+            <div class="section">
+                <h2>Overview</h2>
+                <p>This chapter focuses on <strong>expressions related to states and conditions</strong> in Japanese. It explores various grammar points that describe how actions or situations occur in specific states or conditions. Understanding these structures is essential for conveying nuanced meanings in both spoken and written Japanese.</p>
+                <p>Each grammar point has specific contexts where it’s preferred, and there are subtle differences in how each point conveys states, conditions, or tendencies. Here's a brief overview of the five main grammar points in this chapter:</p>
+
+                <ol>
+                    <li><a href="#Grammar1" onclick="openGrammar(event, 'Grammar1')"><strong>～んばかりだ</strong></a>: Indicates a state that seems like something is about to happen.</li>
+                    <li><a href="#Grammar2" onclick="openGrammar(event, 'Grammar2')"><strong>～とばかり（に）</strong></a>: Indicates an attitude or action that suggests something without explicitly stating it.</li>
+                    <li><a href="#Grammar3" onclick="openGrammar(event, 'Grammar3')"><strong>～ともなく・～ともなしに</strong></a>: Indicates performing an action without a clear intention or purpose.</li>
+                    <li><a href="#Grammar4" onclick="openGrammar(event, 'Grammar4')"><strong>～ながらに（して）</strong></a>: Indicates maintaining a certain state or condition while something else is happening.</li>
+                    <li><a href="#Grammar5" onclick="openGrammar(event, 'Grammar5')"><strong>～きらいがある</strong></a>: Indicates a negative tendency or habit.</li>
+                </ol>
+
+                <p>Click on each grammar point above to explore detailed explanations, examples, comparisons, and simpler versions.</p>
+            </div>
+        </div>
+
+        <!-- Grammar Point 1 -->
+        <div id="Grammar1" class="tabcontent">
+            <div class="section">
+                <h2>1. <span class="grammar-structure">～んばかりだ</span></h2>
+                <p><strong>Meaning:</strong> "As if about to...; Almost..."</p>
+                <p><strong>Japanese:</strong> 「まるで～しそうなほどの状態だ。」</p>
+                <p><strong>Usage:</strong> Used to describe a state that appears as though something is about to happen. It conveys a sense that an action or event is imminent based on observable signs.</p>
+                <p><strong>Formality:</strong> Neutral to formal. Suitable for both spoken and written Japanese.</p>
+                <p><strong>Structure:</strong> <em>動詞普通形（ない形）＋ んばかりだ</em></p>
+
+                <div class="subsection">
+                    <h3>Conjugation Examples:</h3>
+                    <ul>
+                        <li><strong>動詞普通形 + んばかりだ</strong>: 任せると言わんばかりだった。<br>
+                            <em>"He nodded vigorously, as if saying he would entrust it."</em>
+                        </li>
+                        <li><strong>する → せん + んばかりだ</strong>: 笑っているんばかりだ。<br>
+                            <em>"He is smiling as if about to laugh."</em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h3>Example Sentences:</h3>
+                    <ul>
+                        <li>
+                            彼は力強くうなずいた。任せると言わんばかりだった。<br>
+                            <em>"He nodded vigorously, as if saying he would entrust it."</em>
+                        </li>
+                        <li>
+                            頭を畳につけんばかりにしてわびたのに、父は許してくれなかった。<br>
+                            <em>"I bowed my head against the tatami as if about to apologize, but my father did not forgive me."</em>
+                        </li>
+                        <li>
+                            演奏が終わったとき、会場には割れんばかりの拍手が起こった。<br>
+                            <em>"When the performance ended, the audience erupted into thunderous applause."</em>
+                        </li>
+                        <li>
+                            かごいっぱい、あふれんばかりのさくらんぼをいただいた。<br>
+                            <em>"I received a basket overflowing with cherries."</em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h3>Comparison with Other Grammar Structures:</h3>
+                    <p><strong>～んばかりだ</strong> vs. <strong>～にかかわらず</strong></p>
+                    <p><strong>～んばかりだ</strong> is used to express that something seems imminent based on current signs, whereas <strong>～にかかわらず</strong> is used to indicate that something occurs regardless of certain conditions.</p>
+                    <ul>
+                        <li>
+                            <strong>～んばかりだ:</strong><br>
+                            <em>"彼は力強くうなずいた。任せると言わんばかりだった。"<br>
+                            "He nodded vigorously, as if saying he would entrust it."</em>
+                        </li>
+                        <li>
+                            <strong>～にかかわらず:</strong><br>
+                            <em>"天候にかかわらず、試合は行われる。"<br>
+                            "The match will proceed regardless of the weather."</em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h3>Simpler Version</h3>
+                    <p>This grammar point is used to express that something appears imminent based on observable signs. In everyday conversation, people might use simpler structures like <strong>～そうだ</strong>.</p>
+                    <ul>
+                        <li>
+                            <strong>Original (<span class="grammar-structure">～んばかりだ</span>):</strong><br>
+                            任せると言わんばかりだった。<br>
+                            <em>"He nodded vigorously, as if saying he would entrust it."</em>
+                        </li>
+                        <li>
+                            <strong>Simpler Version:</strong><br>
+                            任せると言いそうだった。<br>
+                            <em>"He seemed like he was about to say he would entrust it."</em>
+                        </li>
+                    </ul>
+                    <p><strong>Nuance Difference:</strong> The original <strong>～んばかりだ</strong> carries a more literary or formal tone and emphasizes the state of being almost about to do something. The simpler version using <strong>～そうだ</strong> is more conversational and directly conveys the appearance of an imminent action.</p>
+                </div>
+
+                <div class="subsection">
+                    <h3>Notes:</h3>
+                    <ul>
+                        <li>Used to express that an outcome is contingent upon a specific condition.</li>
+                        <li>Often appears in formal or written contexts.</li>
+                        <li>Commonly used with verbs that represent actions or decisions.</li>
+                        <li>Emphasizes the perception of an imminent action based on the subject's state or behavior.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grammar Point 2 -->
+        <div id="Grammar2" class="tabcontent">
+            <div class="section">
+                <h2>2. <span class="grammar-structure">～とばかり（に）</span></h2>
+                <p><strong>Meaning:</strong> "As if to say...; Without actually saying..."</p>
+                <p><strong>Japanese:</strong> 「実際に声は出さないが、～と言うような態度・行動をとる。」</p>
+                <p><strong>Usage:</strong> Used to describe an attitude or action that suggests something without explicitly stating it. It often implies that the subject is communicating something non-verbally through their behavior or expressions.</p>
+                <p><strong>Formality:</strong> Neutral to formal. Suitable for both spoken and written Japanese.</p>
+                <p><strong>Structure:</strong> <em>発話 + とばかりに</em> / <em>行動 + とばかりに</em></p>
+
+                <div class="subsection">
+                    <h3>Conjugation Examples:</h3>
+                    <ul>
+                        <li><strong>発話 + とばかりに</strong>: 「待ってました」とばかり、みんながテーブルに集まった。<br>
+                            <em>"After buying and returning with the cake, everyone gathered around the table as if saying 'We were waiting for this.'" </em>
+                        </li>
+                        <li><strong>行動 + とばかりに</strong>: 子供はもう歩けないとばかりに、その場にしゃがみ込んでしまった。<br>
+                            <em>"The child squatted down as if saying 'I can't walk anymore.'" </em>
+                        </li>
+                        <li><strong>発話 + とばかりに</strong>: 開発計画について意見交換会が行われた。住民たちはこの時とばかり、いろいろな意見を言った。<br>
+                            <em>"A discussion meeting about the development plan was held. The residents, as if in that moment, expressed various opinions."</em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h3>Example Sentences:</h3>
+                    <ul>
+                        <li>
+                            ケーキを買って帰ったら、「待ってました」とばかり、みんながテーブルに集まった。<br>
+                            <em>"After buying and returning with the cake, everyone gathered around the table as if saying 'We were waiting for this.'" </em>
+                        </li>
+                        <li>
+                            子供はもう歩けないとばかりに、その場にしゃがみ込んでしまった。<br>
+                            <em>"The child squatted down as if saying 'I can't walk anymore.'" </em>
+                        </li>
+                        <li>
+                            開発計画について意見交換会が行われた。住民たちはこの時とばかり、いろいろな意見を言った。<br>
+                            <em>"A discussion meeting about the development plan was held. The residents, as if in that moment, expressed various opinions."</em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h3>Comparison with Other Grammar Structures:</h3>
+                    <p><strong>～とばかり（に）</strong> vs. <strong>～にもかかわらず</strong></p>
+                    <p><strong>～にもかかわらず</strong> means "in spite of" and is used to express that something happened despite certain conditions. <strong>～とばかり（に）</strong> emphasizes that the subject is acting in a way that suggests something without explicitly stating it.</p>
+                    <ul>
+                        <li>
+                            <strong>～とばかり（に）:</strong><br>
+                            <em>"彼は体の障害をものともせずに、精力的に活動している。"<br>
+                            "He is energetically active, undeterred by his physical disabilities."</em>
+                        </li>
+                        <li>
+                            <strong>～にもかかわらず:</strong><br>
+                            <em>"天気が悪いにもかかわらず、試合は行われた。"<br>
+                            "The match was held despite the bad weather."</em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h3>Simpler Version</h3>
+                    <p>This grammar point is used to express that someone is suggesting something through their actions or attitude without explicitly stating it. In everyday conversation, people might use simpler structures like <strong>～を無視して</strong> or <strong>～を気にせず</strong>.</p>
+                    <ul>
+                        <li>
+                            <strong>Original (<span class="grammar-structure">～とばかり（に）</span>):</strong><br>
+                            ケーキを買って帰ったら、「待ってました」とばかり、みんながテーブルに集まった。<br>
+                            <em>"After buying and returning with the cake, everyone gathered around the table as if saying 'We were waiting for this.'" </em>
+                        </li>
+                        <li>
+                            <strong>Simpler Version:</strong><br>
+                            ケーキを買って帰ったら、「待ってました」と無視して、みんながテーブルに集まった。<br>
+                            <em>"After buying and returning with the cake, everyone gathered around the table ignoring 'We were waiting for this.'"</em>
+                        </li>
+                    </ul>
+                    <p><strong>Nuance Difference:</strong> The original <strong>～とばかり（に）</strong> conveys a more nuanced and indirect suggestion through behavior, whereas the simpler version using <strong>～を無視して</strong> is more direct and literal, potentially losing some of the implied meaning.</p>
+                </div>
+
+                <div class="subsection">
+                    <h3>Notes:</h3>
+                    <ul>
+                        <li>Used to describe an attitude or action that suggests something without explicit verbal communication.</li>
+                        <li>Often used with verbs that describe actions or behaviors rather than states.</li>
+                        <li>Typically used to describe others' behaviors, not the speaker's own actions.</li>
+                        <li>Can convey subtle emotions like anticipation, reluctance, or determination based on context.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grammar Point 3 -->
+        <div id="Grammar3" class="tabcontent">
+            <div class="section">
+                <h2>3. <span class="grammar-structure">～ともなく・～ともなしに</span></h2>
+                <p><strong>Meaning:</strong> "Without consciously deciding to...; Unintentionally..." and "Unclear...; Vague..."</p>
+                <p><strong>Japanese:</strong> 
+                    <ul>
+                        <li>A. 「自分で～しようとはっきり意識しないまま、ある動作を行う。」</li>
+                        <li>B. 「はっきり～と特定できない。」</li>
+                    </ul>
+                </p>
+                <p><strong>Usage:</strong> 
+                    <ul>
+                        <li>A. Used to describe performing an action without a clear intention or purpose, often with a lack of awareness.</li>
+                        <li>B. Used to describe something that cannot be clearly identified or is vague.</li>
+                    </ul>
+                </p>
+                <p><strong>Formality:</strong> Neutral to formal. Suitable for both spoken and written Japanese.</p>
+                <p><strong>Structure:</strong> 
+                    <ul>
+                        <li>A. <em>動詞辞書形 + ともなく・ともなしに</em></li>
+                        <li>B. <em>疑問詞（+助詞） + ともなく・ともなしに</em></li>
+                    </ul>
+                </p>
+
+                <div class="subsection">
+                    <h3>Conjugation Examples:</h3>
+                    <ul>
+                        <li><strong>A. 動詞辞書形 + ともなく・ともなしに</strong>: テレビを見るともなく見ていたら、友達がテレビに出ていてびっくりした。<br>
+                            <em>"I was watching TV without really intending to, and was surprised to see my friend on the show."</em>
+                        </li>
+                        <li><strong>A. 動詞辞書形 + ともなく・ともなしに</strong>: 朝起きて、何をするともなくしばらくぼんやりしていた。<br>
+                            <em>"After waking up in the morning, I was dazed for a while without really deciding what to do."</em>
+                        </li>
+                        <li><strong>A. 動詞辞書形 + ともなく・ともなしに</strong>: カーラジオの音楽を聞くともなしに聞いていたら、眠くなってしまった。<br>
+                            <em>"I was listening to the car radio music without really intending to, and ended up getting sleepy."</em>
+                        </li>
+                        <li><strong>B. 疑問詞（+助詞） + ともなく・ともなしに</strong>: どこからともなく、おいしそうなカレーのにおいがしてくる。<br>
+                            <em>"An appetizing curry smell is coming from somewhere unclear."</em>
+                        </li>
+                        <li><strong>B. 疑問詞（+助詞） + ともなく・ともなしに</strong>: だれともなく、熊田さんのことをクマちゃんとあだ名で呼び始めた。<br>
+                            <em>"Without any clear reason, they started calling Mr. Kumada 'Kuma-chan' as a nickname."</em>
+                        </li>
+                        <li><strong>B. 疑問詞（+助詞） + ともなく・ともなしに</strong>: いつからともなしに、わたしはモーツァルトの音楽が大好きになった。<br>
+                            <em>"At some undefined point, I began to love Mozart's music."</em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h3>Example Sentences:</h3>
+                    <ul>
+                        <li>
+                            テレビを見るともなく見ていたら、友達がテレビに出ていてびっくりした。<br>
+                            <em>"I was watching TV without really intending to, and was surprised to see my friend on the show."</em>
+                        </li>
+                        <li>
+                            朝起きて、何をするともなくしばらくぼんやりしていた。<br>
+                            <em>"After waking up in the morning, I was dazed for a while without really deciding what to do."</em>
+                        </li>
+                        <li>
+                            カーラジオの音楽を聞くともなしに聞いていたら、眠くなってしまった。<br>
+                            <em>"I was listening to the car radio music without really intending to, and ended up getting sleepy."</em>
+                        </li>
+                        <li>
+                            どこからともなく、おいしそうなカレーのにおいがしてくる。<br>
+                            <em>"An appetizing curry smell is coming from somewhere unclear."</em>
+                        </li>
+                        <li>
+                            だれともなく、熊田さんのことをクマちゃんとあだ名で呼び始めた。<br>
+                            <em>"Without any clear reason, they started calling Mr. Kumada 'Kuma-chan' as a nickname."</em>
+                        </li>
+                        <li>
+                            いつからともなしに、わたしはモーツァルトの音楽が大好きになった。<br>
+                            <em>"At some undefined point, I began to love Mozart's music."</em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h3>Comparison with Other Grammar Structures:</h3>
+                    <p><strong>～ともなく・～ともなしに</strong> vs. <strong>～にもかかわらず</strong></p>
+                    <p><strong>～にもかかわらず</strong> means "in spite of" and is used to express that something happened despite certain conditions. <strong>～ともなく・～ともなしに</strong> indicates performing an action without a clear intention or purpose, often without conscious decision.</p>
+                    <ul>
+                        <li>
+                            <strong>～ともなく・～ともなしに:</strong><br>
+                            <em>"テレビを見るともなく見ていたら、友達がテレビに出ていてびっくりした。"<br>
+                            "I was watching TV without really intending to, and was surprised to see my friend on the show."</em>
+                        </li>
+                        <li>
+                            <strong>～にもかかわらず:</strong><br>
+                            <em>"天気が悪いにもかかわらず、試合は行われた。"<br>
+                            "The match was held despite the bad weather."</em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h3>Simpler Version</h3>
+                    <p>This grammar point is used to express performing an action without a clear intention or purpose, or something that cannot be clearly identified. In everyday conversation, people might use simpler structures like <strong>～を無意識に</strong> or <strong>～がはっきりしない</strong>.</p>
+                    <ul>
+                        <li>
+                            <strong>Original (<span class="grammar-structure">～ともなく・～ともなしに</span>):</strong><br>
+                            テレビを見るともなく見ていたら、友達がテレビに出ていてびっくりした。<br>
+                            <em>"I was watching TV without really intending to, and was surprised to see my friend on the show."</em>
+                        </li>
+                        <li>
+                            <strong>Simpler Version:</strong><br>
+                            テレビを見るを無意識に見ていたら、友達がテレビに出ていてびっくりした。<br>
+                            <em>"I was unconsciously watching TV, and was surprised to see my friend on the show."</em>
+                        </li>
+                    </ul>
+                    <p><strong>Nuance Difference:</strong> The original <strong>～ともなく・～ともなしに</strong> conveys a more nuanced sense of performing an action without clear intention or purpose. The simpler version using <strong>～を無意識に</strong> is more direct but may lose some of the subtlety.</p>
+                </div>
+
+                <div class="subsection">
+                    <h3>Notes:</h3>
+                    <ul>
+                        <li>A. Used to describe performing an action without a clear intention or purpose, often with a lack of awareness.</li>
+                        <li>B. Used to describe something that cannot be clearly identified or is vague.</li>
+                        <li>Commonly used with verbs that describe habitual or unconscious actions.</li>
+                        <li>Not typically used with actions that require deliberate intent.</li>
+                        <li>When used in Meaning B, it often pairs with unclear subjects like time, place, or people.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grammar Point 4 -->
+        <div id="Grammar4" class="tabcontent">
+            <div class="section">
+                <h2>4. <span class="grammar-structure">～ながらに（して）</span></h2>
+                <p><strong>Meaning:</strong> "While...; Even though..."</p>
+                <p><strong>Japanese:</strong> 「～のまま変わらない状態だ。」</p>
+                <p><strong>Usage:</strong> Used to describe maintaining a certain state or condition while something else is happening. It often emphasizes that despite changes or progress in one aspect, another aspect remains unchanged.</p>
+                <p><strong>Formality:</strong> Neutral to formal. Suitable for both spoken and written Japanese.</p>
+                <p><strong>Structure:</strong> <em>動詞ます形・名詞 + ながらに（して）</em></p>
+
+                <div class="subsection">
+                    <h3>Conjugation Examples:</h3>
+                    <ul>
+                        <li><strong>動詞ます形 + ながらに</strong>: インターネットのおかげで、今は家にいながらにして世界中の人と交流できる。<br>
+                            <em>"Thanks to the internet, I can now interact with people around the world while staying at home."</em>
+                        </li>
+                        <li><strong>名詞 + ながらに</strong>: その女性は母親との死別を涙ながらに語った。<br>
+                            <em>"That woman spoke tearfully about the loss of her mother."</em>
+                        </li>
+                        <li><strong>動詞ます形 + ながらに</strong>: この子は生まれながらに優れた音感を持っていた。<br>
+                            <em>"This child was born with an excellent sense of pitch."</em>
+                        </li>
+                        <li><strong>名詞 + ながらに</strong>: この辺りは昔ながらの田舎の雰囲気が残っている。<br>
+                            <em>"This area retains the atmosphere of a traditional countryside."</em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h3>Example Sentences:</h3>
+                    <ul>
+                        <li>
+                            この子は生まれながらに優れた音感を持っていた。<br>
+                            <em>"This child was born with an excellent sense of pitch."</em>
+                        </li>
+                        <li>
+                            インターネットのおかげで、今は家にいながらにして世界中の人と交流できる。<br>
+                            <em>"Thanks to the internet, I can now interact with people around the world while staying at home."</em>
+                        </li>
+                        <li>
+                            この辺りは昔ながらの田舎の雰囲気が残っている。<br>
+                            <em>"This area retains the atmosphere of a traditional countryside."</em>
+                        </li>
+                        <li>
+                            その女性は母親との死別を涙ながらに語った。<br>
+                            <em>"That woman spoke tearfully about the loss of her mother."</em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h3>Comparison with Other Grammar Structures:</h3>
+                    <p><strong>～ながらに（して）</strong> vs. <strong>～ながら</strong></p>
+                    <p><strong>～ながらに（して）</strong> emphasizes maintaining a certain state while something else occurs, often highlighting an unchanged aspect despite changes. <strong>～ながら</strong> is used to indicate simultaneous actions.</p>
+                    <ul>
+                        <li>
+                            <strong>～ながらに（して）:</strong><br>
+                            <em>"インターネットのおかげで、今は家にいながらにして世界中の人と交流できる。"<br>
+                            "Thanks to the internet, I can now interact with people around the world while staying at home."</em>
+                        </li>
+                        <li>
+                            <strong>～ながら:</strong><br>
+                            <em>"音楽を聴きながら勉強する。"<br>
+                            "I study while listening to music."</em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h3>Simpler Version</h3>
+                    <p>This grammar point is used to express maintaining a certain state or condition while something else is happening. In everyday conversation, people might use simpler structures like <strong>～ながら</strong> without the nuance of maintaining an unchanged state.</p>
+                    <ul>
+                        <li>
+                            <strong>Original (<span class="grammar-structure">～ながらに（して）</span>):</strong><br>
+                            インターネットのおかげで、今は家にいながらにして世界中の人と交流できる。<br>
+                            <em>"Thanks to the internet, I can now interact with people around the world while staying at home."</em>
+                        </li>
+                        <li>
+                            <strong>Simpler Version:</strong><br>
+                            インターネットのおかげで、今は家にいながら世界中の人と交流できる。<br>
+                            <em>"Thanks to the internet, I can now interact with people around the world while staying at home."</em>
+                        </li>
+                    </ul>
+                    <p><strong>Nuance Difference:</strong> The original <strong>～ながらに（して）</strong> adds a sense of maintaining a certain state despite other changes, often used in more formal or descriptive contexts. The simpler version using <strong>～ながら</strong> is more straightforward and commonly used in everyday conversation.</p>
+                </div>
+
+                <div class="subsection">
+                    <h3>Notes:</h3>
+                    <ul>
+                        <li>Used to describe maintaining a certain state or condition while something else is happening.</li>
+                        <li>Often used with nouns that represent inherent qualities or long-standing states.</li>
+                        <li>Can be paired with verbs and adjectives to describe both actions and states.</li>
+                        <li>Not typically used for actions that actively change the state or condition.</li>
+                        <li>When using "して," it emphasizes the action taken while maintaining the state.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grammar Point 5 -->
+        <div id="Grammar5" class="tabcontent">
+            <div class="section">
+                <h2>5. <span class="grammar-structure">～きらいがある</span></h2>
+                <p><strong>Meaning:</strong> "Has a tendency to...; Prone to..."</p>
+                <p><strong>Japanese:</strong> 「～という良くない傾向・性質・くせがある。」</p>
+                <p><strong>Usage:</strong> Used to describe someone who has a negative tendency, trait, or habit. It often implies that the tendency is somewhat ingrained or characteristic of the person.</p>
+                <p><strong>Formality:</strong> Neutral to formal. Suitable for both spoken and written Japanese.</p>
+                <p><strong>Structure:</strong> <em>動詞辞書形／ない形・名詞 + の + きらいがある</em></p>
+
+                <div class="subsection">
+                    <h3>Conjugation Examples:</h3>
+                    <ul>
+                        <li><strong>動詞辞書形 + の + きらいがある</strong>: 物事を悲観的に考えるきらいがある。<br>
+                            <em>"He has a tendency to think pessimistically about things."</em>
+                        </li>
+                        <li><strong>ない形 + の + きらいがある</strong>: 自分と違う考え方を認めようとしないきらいがある。<br>
+                            <em>"He has a tendency to not accept different ways of thinking."</em>
+                        </li>
+                        <li><strong>名詞 + の + きらいがある</strong>: 強情なきらいがある。<br>
+                            <em>"She has a stubborn tendency."</em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h3>Example Sentences:</h3>
+                    <ul>
+                        <li>
+                            彼はどうも物事を悲観的に考えるきらいがある。<br>
+                            <em>"He seems to have a tendency to think pessimistically about things."</em>
+                        </li>
+                        <li>
+                            うちの部長は自分と違う考え方を認めようとしないきらいがある。<br>
+                            <em>"Our department head has a tendency to not accept different ways of thinking."</em>
+                        </li>
+                        <li>
+                            松本さんは一度言い出したら人の意見に耳を貸さない。少し強情なきらいがある。<br>
+                            <em>"Mr. Matsumoto doesn't listen to others' opinions once he starts talking. He has a somewhat stubborn tendency."</em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h3>Comparison with Other Grammar Structures:</h3>
+                    <p><strong>～きらいがある</strong> vs. <strong>～くせがある</strong></p>
+                    <p><strong>～きらいがある</strong> is used to describe a negative tendency or habit that someone possesses, often implying that it's somewhat inherent or characteristic. <strong>～くせがある</strong> also describes a habit or tendency but can carry a slightly more negative or critical connotation.</p>
+                    <ul>
+                        <li>
+                            <strong>～きらいがある:</strong><br>
+                            <em>"彼はどうも物事を悲観的に考えるきらいがある。"<br>
+                            "He seems to have a tendency to think pessimistically about things."</em>
+                        </li>
+                        <li>
+                            <strong>～くせがある:</strong><br>
+                            <em>"彼は約束を守らないくせがある。"<br>
+                            "He has a habit of not keeping promises."</em>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="subsection">
+                    <h3>Simpler Version</h3>
+                    <p>This grammar point is used to describe someone who has a negative tendency or habit. In everyday conversation, people might use simpler structures like <strong>～傾向がある</strong> or <strong>～しがちだ</strong>.</p>
+                    <ul>
+                        <li>
+                            <strong>Original (<span class="grammar-structure">～きらいがある</span>):</strong><br>
+                            彼はどうも物事を悲観的に考えるきらいがある。<br>
+                            <em>"He seems to have a tendency to think pessimistically about things."</em>
+                        </li>
+                        <li>
+                            <strong>Simpler Version:</strong><br>
+                            彼は物事を悲観的に考える傾向がある。<br>
+                            <em>"He has a tendency to think pessimistically about things."</em>
+                        </li>
+                    </ul>
+                    <p><strong>Nuance Difference:</strong> The original <strong>～きらいがある</strong> emphasizes a somewhat inherent negative tendency, often used in more formal contexts. The simpler version using <strong>～傾向がある</strong> is more neutral and commonly used in everyday conversation.</p>
+                </div>
+
+                <div class="subsection">
+                    <h3>Notes:</h3>
+                    <ul>
+                        <li>Used primarily to describe negative tendencies or habits in others.</li>
+                        <li>Not typically used to describe one's own habits or tendencies.</li>
+                        <li>Often paired with adverbs like <strong>どうも</strong> (somehow), <strong>少し</strong> (a little), or <strong>ともすれば</strong> (if anything).</li>
+                        <li>Conveys a critical or slightly disapproving tone, but not extremely harsh.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
